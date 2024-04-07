@@ -1,0 +1,319 @@
+{
+  "maincategory": [
+    {
+      "name": "Male",
+      "id": 2
+    },
+    {
+      "name": "Female",
+      "id": 3
+    },
+    {
+      "name": "Kids",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "name": "Women"
+    },
+    {
+      "id": 6,
+      "name": "Men"
+    }
+  ],
+  "subcategory": [
+    {
+      "name": "Shirt",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Jeans"
+    },
+    {
+      "id": 3,
+      "name": "T-shirt"
+    },
+    {
+      "id": 4,
+      "name": "Trouser"
+    }
+  ],
+  "brand": [
+    {
+      "name": "Adidas",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Nike"
+    },
+    {
+      "id": 3,
+      "name": "Puma"
+    },
+    {
+      "name": "Polo",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "name": "Zara"
+    },
+    {
+      "name": "GUCCI",
+      "id": 6
+    },
+    {
+      "name": "Tommy Hilfiger",
+      "id": 7
+    }
+  ],
+  "product": [
+    {
+      "id": 0,
+      "name": "Kids Jens Slim Fit",
+      "maincategory": "Kids",
+      "subcategory": "Jeans",
+      "brand": "Nike",
+      "color": "Blue",
+      "size": "26",
+      "baseprice": 5499,
+      "discount": 45,
+      "finalprice": 3024,
+      "stock": "Out Of Stock",
+      "pic1": "p63.jpg",
+      "pic2": "p36.jpg",
+      "pic3": "p64.jpg",
+      "pic4": "p66.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Female T-shirt GUCCI",
+      "maincategory": "Female",
+      "subcategory": "T-shirt",
+      "brand": "GUCCI",
+      "color": "White",
+      "size": "MD",
+      "baseprice": 5999,
+      "discount": 30,
+      "finalprice": 4199,
+      "stock": "In Stock",
+      "description": "",
+      "pic1": "p39.jpg",
+      "pic2": "p22.jpg",
+      "pic3": "p23.jpg",
+      "pic4": "p28.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Men Shirt Adidas",
+      "maincategory": "Male",
+      "subcategory": "Jeans",
+      "brand": "Zara",
+      "color": " Blue",
+      "size": "28",
+      "baseprice": 2359,
+      "discount": 20,
+      "finalprice": 1887,
+      "stock": "In Stock",
+      "description": "",
+      "pic1": "p52.jpg",
+      "pic2": "p70.jpg",
+      "pic3": "p72.jpg",
+      "pic4": "p74.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Men Shirt Tommy Hilfige",
+      "maincategory": "Male",
+      "subcategory": "Shirt",
+      "brand": "Tommy Hilfiger",
+      "color": "Black",
+      "size": "SM",
+      "baseprice": 7859,
+      "discount": 45,
+      "finalprice": 4322,
+      "stock": "In Stock",
+      "description": "",
+      "pic1": "p41.jpg",
+      "pic2": "p16.jpg",
+      "pic3": "p1.jpg",
+      "pic4": "p34.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Male T-shirt Polo",
+      "maincategory": "Male",
+      "subcategory": "T-shirt",
+      "brand": "Polo",
+      "color": "White",
+      "size": "38",
+      "baseprice": 7999,
+      "discount": 50,
+      "finalprice": 3999,
+      "stock": "In Stock",
+      "description": "",
+      "pic1": "p21.jpg",
+      "pic2": "p3.jpg",
+      "pic3": "p15.jpg",
+      "pic4": "p51.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Male Shirt Puma",
+      "maincategory": "Male",
+      "subcategory": "Shirt",
+      "brand": "Puma",
+      "color": "Black",
+      "size": "38",
+      "baseprice": 6999,
+      "discount": 45,
+      "finalprice": 3849,
+      "stock": "In Stock",
+      "description": "",
+      "pic1": "p2.jpg",
+      "pic2": "p25.jpg",
+      "pic3": "p1.jpg",
+      "pic4": "p26.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Women Trouser Nike",
+      "maincategory": "Woman",
+      "subcategory": "Trouser",
+      "brand": "Nike",
+      "color": "Pink",
+      "size": "MD",
+      "baseprice": 7559,
+      "discount": 60,
+      "finalprice": 3023,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p7.jpg",
+      "pic2": "p4.jpg",
+      "pic3": "p8.jpg",
+      "pic4": "p12.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Male T-Shirt White Adidas",
+      "maincategory": "Male",
+      "subcategory": "T-shirt",
+      "brand": "Adidas",
+      "color": "White",
+      "size": "36",
+      "baseprice": 6699,
+      "discount": 20,
+      "finalprice": 5359,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p15.jpg",
+      "pic2": "p21.jpg",
+      "pic3": "p24.jpg",
+      "pic4": "p44.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Female Jeans Zara",
+      "maincategory": "Female",
+      "subcategory": "Jeans",
+      "brand": "Zara",
+      "color": "Blue",
+      "size": "28",
+      "baseprice": 2899,
+      "discount": 35,
+      "finalprice": 1884,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p6.jpg",
+      "pic2": "p47.jpg",
+      "pic3": "p18.jpg",
+      "pic4": "p33.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Female Trouser Zara",
+      "maincategory": "Female",
+      "subcategory": "Trouser",
+      "brand": "Puma",
+      "color": "Blue",
+      "size": "LG",
+      "baseprice": 3499,
+      "discount": 50,
+      "finalprice": 1749,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p20.jpg",
+      "pic2": "p27.jpg",
+      "pic3": "p45.jpg",
+      "pic4": "p7.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Male Shirt Puma",
+      "maincategory": "Male",
+      "subcategory": "Shirt",
+      "brand": "Puma",
+      "color": "Blue",
+      "size": "36",
+      "baseprice": 4999,
+      "discount": 45,
+      "finalprice": 2749,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p34.jpg",
+      "pic2": "p41.jpg",
+      "pic3": "p71.jpg",
+      "pic4": "p44.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Male T-Shirt Nike",
+      "maincategory": "Male",
+      "subcategory": "Shirt",
+      "brand": "Nike",
+      "color": "Blue",
+      "size": "XXL",
+      "baseprice": 3859,
+      "discount": 35,
+      "finalprice": 2508,
+      "stock": "In Stock",
+      "description": "This is Sample Product",
+      "pic1": "p29.jpg",
+      "pic2": "p15.jpg",
+      "pic3": "p30.jpg",
+      "pic4": "p54.jpg"
+    }
+  ],
+  "user": [
+    {
+      "id": 0
+    }
+  ],
+  "csrt": [
+    {
+      "id": 0
+    }
+  ],
+  "wishlist": [
+    {
+      "id": 0
+    }
+  ],
+  "checkout": [
+    {
+      "id": 0
+    }
+  ],
+  "contact": [
+    {
+      "id": 0
+    }
+  ],
+  "newslatter": [
+    {
+      "id": 0
+    }
+  ]
+}
