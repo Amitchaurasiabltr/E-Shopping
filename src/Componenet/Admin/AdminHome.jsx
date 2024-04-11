@@ -27,7 +27,7 @@ export default function AdminHome() {
                                 </div>
                                 <div className='d-flex'>
                                     <div className='border  p-3 w-50'>Email</div>
-                                    <div className='border  p-3 w-50'>admin@eshopper.com</div>
+                                    <div className='border  p-3 w-50'>admin@eshopping.com</div>
                                 </div>
                                 <div className='d-flex'>
                                     <div className='border  p-3 w-50'>Phone</div>

@@ -46,7 +46,7 @@ export default function Signup() {
                                     <form className='' onSubmit={postData}>
                                         <div className='row mb-3'>
                                             <div className='col-md-6 coll-12'>
-                                                <input type='text' name='name' id='name' onChange={getData} placeholder='Enter Fullname : ' className='form-control' />
+                                                <input type='text' name='name' id='name' onChange={getData} placeholder='Enter Full name : ' className='form-control' />
                                             </div>
                                             <div className='col-md-6 coll-12'>
                                                 <input type='text' name='username' id='username' onChange={getData} placeholder='Enter Username : ' className='form-control' />

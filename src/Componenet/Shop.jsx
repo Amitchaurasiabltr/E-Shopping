@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link,useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 import { useSelector, useDispatch } from 'react-redux';
 import { getProduct } from "../Store/ActionCreators/ProductActionCreators"
@@ -8,12 +8,10 @@ import { getSubcategory } from "../Store/ActionCreators/SubcategoryActionCreator
 import { getBrand } from "../Store/ActionCreators/BrandActionCreators"
 
 export default function Shop() {
-    var {maincat} = useParams()
+    var { maincat } = useParams()
     var [mc, setmc] = useState(maincat)
     var [sc, setsc] = useState("All")
     var [br, setbr] = useState("All")
-    var [min, setmin] = useState(1)
-    var [max, setmax] = useState(1000)
     var [shopproduct, setshopproduct] = useState([])
 
     var product = useSelector((state) => state.ProductStateData)
@@ -39,7 +37,7 @@ export default function Shop() {
         else if (mc === 'All' && sc !== "All" && br !== "All")
             setshopproduct(product.filter((item) => item.subcategory === sc && item.brand === br))
         else
-        setshopproduct(product.filter((item) =>  item.maincategory === mc && item.subcategory === sc && item.brand === br))
+            setshopproduct(product.filter((item) => item.maincategory === mc && item.subcategory === sc && item.brand === br))
     }
     function getFilter(input) {
         if (input.mc) {
@@ -56,29 +54,15 @@ export default function Shop() {
         }
 
     }
-    function getPriceFilterData(min,max){
-        console.log(min,max);
-        setshopproduct(product.filter((item)=>item.finalprice>=min && item.finalprice<=max))
-    }
-    function getPriceFilter(e){
-        if(e.target.name==="min"){
-            setmin(e.target.value)
-            getPriceFilterData(e.target.value,max)
-        }
-        else{
-            setmax(e.target.value)
-            getPriceFilterData(min,e.target.value)
-        }
-    }
     function getAPIData() {
         dispatch(getProduct())
         dispatch(getMaincategory())
         dispatch(getSubcategory())
         dispatch(getBrand())
-        if(maincat==="All")
-        setshopproduct(product)
+        if (maincat === "All")
+            setshopproduct(product)
         else
-        setshopproduct(product.filter((item)=>item.maincategory===maincat))
+            setshopproduct(product.filter((item) => item.maincategory === maincat))
     }
     useEffect(() => {
         getAPIData()
@@ -110,13 +94,13 @@ export default function Shop() {
                                                     <div className="overlay"></div>
                                                 </a>
                                                 <div className="text py-3 pb-4 px-3">
-                                                    <h3><Link to={`/single-product/${item.id}`}>{item.name}</Link></h3>
+                                                    <h3><Link to="#">{item.name}</Link></h3>
                                                     <div className="pricing">
                                                         <p className="price"><del>&#8377;{item.baseprice}</del><span>&#8377;{item.finalprice}</span></p>
                                                     </div>
                                                     <p className="bottom-area d-flex px-3">
-                                                        <Link to={`/single-product/${item.id}`} className="add-to-cart text-center py-2 mr-1"><span>Add to cart <i className="ion-ios-add ml-1"></i></span></Link>
-                                                        {/* <Link to="#" className="buy-now text-center py-2">Buy now<span><i className="ion-ios-cart ml-1"></i></span></Link> */}
+                                                        <Link to="#" className="add-to-cart text-center py-2 mr-1"><span>Add to cart <i className="ion-ios-add ml-1"></i></span></Link>
+                                                        <Link to="#" className="buy-now text-center py-2">Buy now<span><i className="ion-ios-cart ml-1"></i></span></Link>
                                                     </p>
                                                 </div>
                                             </div>
@@ -219,7 +203,13 @@ export default function Shop() {
                                                     <label htmlFor="guests">Price from:</label>
                                                     <div className="form-field">
                                                         <i className="icon icon-arrow-down3"></i>
-                                                        <input type="number" name='min' onChange={getPriceFilter} value={min} className="form-control"/>
+                                                        <select name="people" id="people" className="form-control">
+                                                            <option value="#">1</option>
+                                                            <option value="#">200</option>
+                                                            <option value="#">300</option>
+                                                            <option value="#">400</option>
+                                                            <option value="#">1000</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
@@ -228,7 +218,13 @@ export default function Shop() {
                                                     <label htmlFor="guests">Price to:</label>
                                                     <div className="form-field">
                                                         <i className="icon icon-arrow-down3"></i>
-                                                        <input type="number" name='max' onChange={getPriceFilter} value={max} className="form-control"/>
+                                                        <select name="people" id="people" className="form-control">
+                                                            <option value="#">2000</option>
+                                                            <option value="#">4000</option>
+                                                            <option value="#">6000</option>
+                                                            <option value="#">8000</option>
+                                                            <option value="#">10000</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
@@ -243,4 +239,3 @@ export default function Shop() {
         </>
     )
 }
- 

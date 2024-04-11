@@ -134,7 +134,7 @@ export default function Home() {
 							product.map((item,index)=>{
 								return <div key={index} className="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
 								<div className="product d-flex flex-column">
-									<a target="_blank" href={`/assets/productimages/${item.pic1}`} className="img-prod"><img className="img-fluid" src={`assets/productimages/${item.pic1}`} style={{height:"250px",width:"100%"}} alt="" />
+									<a target="_blank" href={`/assets/productimages/${item.pic1}`} className="img-prod"><img className="img-fluid" src={`/public/assets/productimages/${item.pic1}`} style={{height:"250px",width:"100%"}} alt="" />
 										<span className="status">{item.discount}% Off</span>
 										<div className="overlay"></div>
 									</a>
