@@ -100,7 +100,7 @@ export default function Home() {
 									<span className="flaticon-customer-service"></span>
 								</div>
 								<div className="media-body">
-									<h3 className="heading">Support Customer</h3>
+									<h3 className="heading">Customer Support</h3>
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 								</div>
 							</div>
@@ -134,7 +134,7 @@ export default function Home() {
 							product.map((item,index)=>{
 								return <div key={index} className="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
 								<div className="product d-flex flex-column">
-									<a target="_blank" href={`/assets/productimages/${item.pic1}`} className="img-prod"><img className="img-fluid" src={`/public/assets/productimages/${item.pic1}`} style={{height:"250px",width:"100%"}} alt="" />
+									<a target="_blank" href={`assets/productimages/${item.pic1}`} className="img-prod"><img className="img-fluid" src={`assets/productimages/${item.pic1}`} style={{height:"250px",width:"100%"}} alt="" />
 										<span className="status">{item.discount}% Off</span>
 										<div className="overlay"></div>
 									</a>
@@ -275,7 +275,7 @@ export default function Home() {
 								<span className="flaticon-customer-service"></span>
 							</div>
 							<div className="text">
-								<h3>All Day Support</h3>
+								<h3>Customer Support</h3>
 								<p className="mb-0">Separated they live in. A small river named Duden flows</p>
 							</div>
 						</div>

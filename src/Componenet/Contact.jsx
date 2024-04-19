@@ -21,22 +21,22 @@ export default function Contact() {
                         <div className="w-100"></div>
                         <div className="col-md-3 d-flex">
                             <div className="info bg-white p-4">
-                                <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                                <p><span>Address:</span> A-10, Sector 18, Noida, 201301, UP, India </p>
                             </div>
                         </div>
                         <div className="col-md-3 d-flex">
                             <div className="info bg-white p-4">
-                                <p><span>Phone:</span> <Link to="tel://1234567920">+ 1235 2355 98</Link></p>
+                                <p><span>Phone:</span> <Link to="tel://8858113691">+91 8858113691</Link></p>
                             </div>
                         </div>
                         <div className="col-md-3 d-flex">
                             <div className="info bg-white p-4">
-                                <p><span>Email:</span> <Link to="mailto:info@yoursite.com">info@yoursite.com</Link></p>
+                                <p><span>Email:</span> <Link to="mailto:amitchaurasiabltr.com">amitchaurasiabltr.com</Link></p>
                             </div>
                         </div>
                         <div className="col-md-3 d-flex">
                             <div className="info bg-white p-4">
-                                <p><span>Website</span> <Link to="#">yoursite.com</Link></p>
+                                <p><span>Website</span> <Link to="#">youreshopping.com</Link></p>
                             </div>
                         </div>
                     </div>
